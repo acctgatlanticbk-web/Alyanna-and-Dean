@@ -134,36 +134,38 @@
 
 @theme inline {
   --font-sans: "Inter", "Inter Fallback";
-  /* Updated serif font to Great Vibes */
   --font-serif: "Great Vibes", "Great Vibes Fallback";
-
-  /* ─── Motif palette — edit here, affects every component ─── */
-  /* Background */
-  --color-motif-cream:   #FAE6C3; /* Warm Champagne Cream */
-
+  
+  /* ─── Autumn Garden Wedding Palette ───────────────────── */
+  
+  /* Background (used by most containers) */
+  --color-motif-cream:   #F8F4EC; /* Ivory */
+  
   /* Primary Highlight */
-  --color-motif-yellow:  #F8E086; /* Soft Golden Yellow */
-
+  --color-motif-yellow:  #E9D7A6; /* Champagne */
+  
   /* Secondary */
-  --color-motif-soft:    #A7D4F5; /* Dusty Sky Blue */
-  --color-motif-accent:  #808874; /* Dusty Blue */
-
+  --color-motif-soft:    #DDB79C; /* Blush */
+  --color-motif-accent:  #E53A0A; /* Dusty Rose */
+  
   /* Primary Brand */
-  --color-motif-deep:    #7BACD4; /* Primary Dusty Blue */
-  --color-motif-medium:  #808874; /* Light Dusty Blue */
-
+  --color-motif-deep:    #9D6D29; /* Mocha */
+  --color-motif-medium:  #A4B18A; /* Sage */
+  
   /* Neutral */
-  --color-motif-silver:  #F4EFD9; /* Soft Champagne White */
-
-  /* Welcome section — readable on whitened cream */
-  --color-welcome-bg:        color-mix(in srgb, var(--color-motif-cream) 38%, white);
-  --color-welcome-bg-soft:   color-mix(in srgb, var(--color-motif-cream) 22%, white);
-  --color-welcome-text:      #3A3530;
-  --color-welcome-text-soft: #5A534C;
-  --color-welcome-heading:   #2A4560;
-  --color-welcome-script:    #3D5A72;
-  --color-welcome-navy:      #1E3A5F;
-  --color-welcome-green:     #2F6B4F;
+  --color-motif-silver:  #FDFBF8; /* Soft Ivory White */
+  
+  /* Welcome section */
+  --color-welcome-bg:        color-mix(in srgb, var(--color-motif-cream) 45%, white);
+  --color-welcome-bg-soft:   color-mix(in srgb, var(--color-motif-cream) 25%, white);
+  
+  --color-welcome-text:      #4A433D;
+  --color-welcome-text-soft: #6C655F;
+  
+  --color-welcome-heading:   #806046; /* Mocha */
+  --color-welcome-script:    #B88A7E; /* Dusty Rose */
+  --color-welcome-navy:      #9D6D29; /* Deep Mocha */
+  --color-welcome-green:     #7D8B69; /* Dark Sage */
   /* ─────────────────────────────────────────────────────────── */
   --font-imperial-script: "Imperial Script", cursive;
   --font-beautiful-malera: "Beautiful Malera", cursive;

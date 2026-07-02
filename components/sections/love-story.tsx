@@ -75,7 +75,7 @@ function LoveStoryTitle() {
         style={{
           marginTop: "var(--script-overlap)",
           fontSize: "var(--script-size)",
-          color: "var(--color-welcome-green)",
+          color: "var(--color-motif-accent)",
           textShadow:
             "0 1px 0 color-mix(in srgb, var(--color-welcome-bg) 95%, white), 0 0 10px color-mix(in srgb, var(--color-welcome-bg) 65%, white)",
         }}
@@ -97,7 +97,15 @@ export function LoveStory() {
         <div className="pointer-events-none absolute right-0 top-0 z-10">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/decoration/decoration/right-top-decoration.png"
+            src="/decoration/deco/top-right-corner-deco.png"
+            alt=""
+            className={CORNER_DECO_CLASS}
+          />
+        </div>
+        <div className="pointer-events-none absolute left-0 top-0 z-10">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/decoration/deco/top-left-corner-deco.png"
             alt=""
             className={CORNER_DECO_CLASS}
           />
@@ -118,92 +126,332 @@ export function LoveStory() {
           &ldquo;11 Years of Love, Now Forever&rdquo;
         </p> */}
       </div>
-
-      <StorySection
+{/* 1st story */}
+<StorySection
         theme="light"
         layout="image-left"
         isFirst={true}
-        title="A Simple Message, A Beautiful Beginning"
-        imageSrc="/mobile-background/couple (13).webp"
+        title="The Spark That Started It All"
+        imageSrc="/mobile-background/2018 Feb.JPG"
         text={
           <>
             <p className="mb-4">
-            Sometimes, the most beautiful things begin with the simplest message.
+            Every great love story starts with a single moment that changes everything.
             </p>
             <p className="mb-4">
-            It all started with an Instagram Direct Message.
+            For Alyanna and Dean, it began with a simple hello, a quiet spark neither of them expected would grow into forever.
             </p>
           </>
         }
       />
-
+{/* 2nd story */}
       <StorySection
         theme="dark"
         layout="image-right"
-        imageSrc="/mobile-background/couple (18).webp"
-        title="From Conversations to Something More"
+        imageSrc="/mobile-background/2019 Jan.webp"
+        title="From Strangers to Sweethearts"
         text={
           <>
             <p className="mb-4">
-            Every message we exchanged brought us closer together.
+            Little by little, strangers became friends, and friends became something far more special.
             </p>
             <p className="mb-4">
-            Every messages we exchange, we felt a rare and beautiful connection—one that has grown into a love filled with laughter, late-night long distance talks, and unforgettable memories.
+            With every conversation and every shared laugh, Alyanna and Dean grew closer, building a bond that felt easy, warm, and undeniably right.
             </p>
           </>
         }
       />
-
+{/* 3rd story */}
       <StorySection
         theme="light"
         layout="image-left"
-        imageSrc="/mobile-background/couple (7).webp"
-        title="Love Across the Distance"
+        imageSrc="/mobile-background/2019 July.webp"
+        title="Wanderlust and Warm Hearts"
         text={
           <>
             <p>
-            Distance has never diminished the love we share.
+            Some of the sweetest memories are made far from home, exploring new places side by side.
             </p>
             <p className="mb-4">
-Our love story continues in a long distance relationship, Jopert in the United Kingdom and Kathleen here in the Philippines.
-            </p>
-            <p className="mb-4">
-But in every season, we have celebrated life's joys and faced challenges hand in hand, learning that love is built in both the grand moments and the quiet everyday ones.
+            For Alyanna and Dean, every trip became an adventure worth remembering, proof that home is simply wherever they are together.
             </p>
           </>
         }
       />
-
+{/* 4th story */}
       <StorySection
         theme="dark"
         layout="image-right"
-        imageSrc="/mobile-background/couple (8).webp"
-        title="Beginning Our Greatest Chapter"
+        imageSrc="/mobile-background/2020 Jan.webp"
+        title="A Bond That Only Grew Deeper"
         text={
           <>
             <p>
-            Today, our love becomes a lifelong promise.
+            Through the years, their love did not just last, it flourished.
             </p>
             <p className="mb-4">
-Now, as we begin this new chapter as husband and wife, our vows are a promise to place love at the heart of our marriage.
+            Every new season brought fresh adventures and quiet, steady moments that pulled Alyanna and Dean even closer together.
             </p>
           </>
         }
       />
-
+{/* 5th story */}
+      <StorySection
+        theme="light"
+        layout="image-left"
+        imageSrc="/mobile-background/fake proposal 2020.webp"
+        title="A Sweet Glimpse of Forever"
+        text={
+          <>
+            <p>
+            Long before the real question was asked, forever was already on their minds.
+            </p>
+            <p className="mb-4">
+            Alyanna and Dean often pictured the day they would promise a lifetime to each other, a dream slowly taking shape with every year that passed.
+            </p>
+          </>
+        }
+      />
+{/* 6th story */}
+      <StorySection
+        theme="dark"
+        layout="image-right"
+        isLast={true}
+        imageSrc="/mobile-background/2021 Jan.webp"
+        title="Celebrating Every Beautiful Milestone"
+        text={
+          <>
+            <p>
+            Life feels a little brighter when its biggest moments are shared with the right person.
+            </p>
+            <p className="mb-4">
+            Alyanna and Dean made it a habit to celebrate every win together, no achievement ever felt small when the other was cheering nearby.
+            </p>
+          </>
+        }
+      />
+{/* 7th story */}
       <StorySection
         theme="light"
         layout="image-left"
         isLast={true}
-        imageSrc="/mobile-background/couple (11).webp"
-        title="Our Story Becomes Even More Beautiful"
+        imageSrc="/mobile-background/Alyanna graduation 2021.webp"
+        title="Proud of Every Step, Alyanna"
         text={
           <>
             <p>
-            Your presence completes this unforgettable moment.
+            Hard work and quiet dedication finally paid off.
             </p>
             <p className="mb-4">
-Having you here to witness and celebrate with us makes this moment truly complete.
+            Dean stood proudly beside Alyanna on this well earned day, one more memory added to the story they were building together.
+            </p>
+          </>
+        }
+      />
+{/* 8th story */}
+            <StorySection
+        theme="dark"
+        layout="image-right"
+        isLast={true}
+        imageSrc="/mobile-background/Alyanna roll signing 2022.webp"
+        title="Another Chapter, Another Dream Realized"
+        text={
+          <>
+            <p>
+            A new page turned, and a dream became real.
+            </p>
+            <p className="mb-4">
+            With Dean by her side, Alyanna took another confident step toward the future they had long imagined together.
+            </p>
+          </>
+        }
+      />
+{/* 9th story */}
+       <StorySection
+        theme="light"
+        layout="image-left"
+        imageSrc="/mobile-background/2022 Dec.webp"
+        title="Falling Deeper, One Day at a Time"
+        text={
+          <>
+            <p className="mb-4">
+            What began as easy conversations slowly turned into something they both looked forward to every single day.
+            </p>
+            <p className="mb-4">
+            Alyanna and Dean found comfort in each other, a quiet certainty that this connection was rare and worth holding on to.
+            </p>
+          </>
+        }
+      />
+{/* 10th story */}
+      <StorySection
+        theme="dark"
+        layout="image-right"
+        imageSrc="/mobile-background/2023 Dec.webp"
+        title="New Places, Same Sweet Company"
+        text={
+          <>
+            <p>
+            No matter the destination, the best part of every journey was always each other.
+            </p>
+            <p className="mb-4">
+            Alyanna and Dean chased new sights and cherished simple moments, learning that adventure is always sweeter when shared.
+            </p>
+          </>
+        }
+      />
+{/* 11th story */}
+      <StorySection
+        theme="light"
+        layout="image-left"
+        imageSrc="/mobile-background/2024 Jan.webp"
+        title="Steady, Strong, and Still Growing"
+        text={
+          <>
+            <p>
+            Their love was never rushed, it grew steadily, season after season.
+            </p>
+            <p className="mb-4">
+            Every challenge faced together only proved to Alyanna and Dean how strong their bond truly was.
+            </p>
+          </>
+        }
+      />
+{/* 12th story */}
+      <StorySection
+        theme="dark"
+        layout="image-right"
+        isLast={true}
+        imageSrc="/mobile-background/Dean graduation 2024.JPG"
+        title="Proud of Every Step, Dean"
+        text={
+          <>
+            <p>
+            Hard work and quiet dedication finally paid off.
+            </p>
+            <p className="mb-4">
+            Alyanna stood proudly beside Dean on this well earned day, one more memory added to the story they were building together.
+            </p>
+          </>
+        }
+      />
+{/* 13th story */}
+      <StorySection
+        theme="light"
+        layout="image-left"
+        isLast={true}
+        imageSrc="/mobile-background/2024 Oct.webp"
+        title="Cheering Each Other On"
+        text={
+          <>
+            <p>
+            Life feels a little brighter when its biggest moments are shared with the right person.
+            </p>
+            <p className="mb-4">
+            Alyanna and Dean made it a habit to celebrate every win together, no achievement ever felt small when the other was cheering nearby.
+            </p>
+          </>
+        }
+      />
+{/* 14th story */}
+      <StorySection
+        theme="dark"
+        layout="image-right"
+        imageSrc="/mobile-background/2025 Jan.webp"
+        title="A New Year, A Deeper Love"
+        text={
+          <>
+            <p>
+            Each new year brought its own quiet reminder of how far they had come.
+            </p>
+            <p className="mb-4">
+            Alyanna and Dean welcomed every season with hope, growing more certain that they had found their forever person.
+            </p>
+          </>
+        }
+      />
+{/* 15th story */}
+      <StorySection
+        theme="light"
+        layout="image-left"
+        imageSrc="/mobile-background/Dean roll signing 2025.webp"
+        title="Another Chapter, Another Dream Realized"
+        text={
+          <>
+            <p>
+            A new page turned, and a dream became real.
+            </p>
+            <p className="mb-4">
+            With Alyanna by his side, Dean took another confident step toward the future they had long imagined together.
+            </p>
+          </>
+        }
+      />
+{/* 16th story */}
+      <StorySection
+        theme="dark"
+        layout="image-right"
+        isLast={true}
+        imageSrc="/mobile-background/2025 Oct.png"
+        title="Milestones Made Sweeter Together"
+        text={
+          <>
+            <p>
+            Life feels a little brighter when its biggest moments are shared with the right person.
+            </p>
+            <p className="mb-4">
+            Alyanna and Dean carried this belief through every season, celebrating one another with open hearts.
+            </p>
+          </>
+        }
+      />
+{/* 17th story */}
+       <StorySection
+        theme="light"
+        layout="image-left"
+        imageSrc="/mobile-background/2026 Jan.webp"
+        title="Still Choosing Each Other"
+        text={
+          <>
+            <p className="mb-4">
+            Years later, the spark that started it all had only grown warmer.
+            </p>
+            <p className="mb-4">
+            Alyanna and Dean kept choosing each other, day after day, certain there was no one else they would rather share life with.
+            </p>
+          </>
+        }
+      />
+{/* 18th story */}
+      <StorySection
+        theme="dark"
+        layout="image-right"
+        imageSrc="/mobile-background/2026 March.webp"
+        title="Together, Always the Better Adventure"
+        text={
+          <>
+            <p>
+            No matter the destination, the best part of every journey was always each other.
+            </p>
+            <p className="mb-4">
+            Alyanna and Dean continued to explore the world hand in hand, grateful that every road led them closer together.
+            </p>
+          </>
+        }
+      />
+{/* 19th story */}
+      <StorySection
+        theme="light"
+        layout="image-left"
+        imageSrc="/mobile-background/real proposal 2026.webp"
+        title="Yes, To Forever"
+        text={
+          <>
+            <p>
+            After years of love, laughter, and countless adventures, the moment finally arrived.
+            </p>
+            <p className="mb-4">
+            Dean got down on one knee, and Alyanna said yes, sealing their promise to spend a lifetime together.
             </p>
           </>
         }
@@ -216,7 +464,7 @@ Having you here to witness and celebrate with us makes this moment truly complet
         <div className="pointer-events-none absolute bottom-0 left-0 z-10">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/decoration/decoration/left-bottom-decoration%20(2).png"
+            src="/decoration/deco/bottom-left-corner-deco.png"
             alt=""
             className={CORNER_DECO_CLASS}
           />
@@ -224,7 +472,7 @@ Having you here to witness and celebrate with us makes this moment truly complet
         <div className="pointer-events-none absolute bottom-0 right-0 z-10">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/decoration/decoration/right-bottom-decoration%20(2).png"
+            src="/decoration/deco/bottom-right-corner-deco.png"
             alt=""
             className={CORNER_DECO_CLASS}
           />

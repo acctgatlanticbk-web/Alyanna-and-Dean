@@ -146,7 +146,7 @@ function BookOfGuestsTitle() {
         style={{
           marginTop: "var(--script-overlap)",
           fontSize: "var(--script-size)",
-          color: "var(--color-welcome-green)",
+          color: "var(--color-motif-accent)",
           textShadow:
             "0 1px 0 color-mix(in srgb, var(--color-welcome-bg) 95%, white), 0 0 10px color-mix(in srgb, var(--color-welcome-bg) 65%, white)",
         }}
@@ -331,7 +331,7 @@ export function BookOfGuests() {
       <div className="pointer-events-none absolute left-0 top-0 z-10">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src="/decoration/decoration/left-top-decoration.png"
+          src="/decoration/deco/top-left-corner-deco.png"
           alt=""
           className={CORNER_DECO_CLASS}
         />
@@ -339,7 +339,7 @@ export function BookOfGuests() {
       <div className="pointer-events-none absolute right-0 top-0 z-10">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src="/decoration/decoration/right-top-decoration.png"
+          src="/decoration/deco/top-right-corner-deco.png"
           alt=""
           className={CORNER_DECO_CLASS}
         />
@@ -347,7 +347,7 @@ export function BookOfGuests() {
       <div className="pointer-events-none absolute bottom-0 left-0 z-10">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src="/decoration/decoration/left-bottom-decoration%20(2).png"
+          src="/decoration/deco/bottom-left-corner-deco.png"
           alt=""
           className={CORNER_DECO_CLASS}
         />
@@ -355,7 +355,7 @@ export function BookOfGuests() {
       <div className="pointer-events-none absolute bottom-0 right-0 z-10">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src="/decoration/decoration/right-bottom-decoration%20(2).png"
+          src="/decoration/deco/bottom-right-corner-deco.png"
           alt=""
           className={CORNER_DECO_CLASS}
         />

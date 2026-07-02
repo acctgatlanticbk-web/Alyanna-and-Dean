@@ -61,7 +61,7 @@ const softPanelStyle = {
   backgroundColor: "var(--color-welcome-bg-soft)",
 } as const
 
-const QR_FG = "#1E3A5F"
+const QR_FG = "#E53A0A"
 const QR_BG = "#FAF7F2"
 
 function SectionIconDivider({ icon }: { icon: React.ReactNode }) {
@@ -113,7 +113,7 @@ function DetailsTitle() {
         style={{
           marginTop: "var(--script-overlap)",
           fontSize: "var(--script-size)",
-          color: "var(--color-welcome-green)",
+          color: "var(--color-motif-accent)",
           textShadow:
             "0 1px 0 color-mix(in srgb, var(--color-welcome-bg) 95%, white), 0 0 10px color-mix(in srgb, var(--color-welcome-bg) 65%, white)",
         }}
@@ -150,39 +150,51 @@ const ct = {
 
 const attireGuide = {
   sponsors: {
-    image: "/Details/sponsorsnew.png",
+    image: "/Details/parentsattire.png",
     imageAspect: "669/373",
     ladies: {
-      colors: ["#3E5F7E", "#6F8FAF", "#AFC5D8", "#D8E4EC", "#FAF8F5"] as const,
-      description: "Dusty Blue Long Gown",
+      colors: ["#E66318", "#6A250C"] as const,
+      description: "Mother of the Bride : Orange Silk - ( Light crepe ) , Mother of the Groom : Burnt Orange - ( Rustic wool )",
     },
     gentlemen: {
-      colors: ["#E7D8C5", "#D6C2A8", "#3B3B3B", "#161616"] as const,
-      description: "Barong Tagalog and Black Pants",
+      colors: ["#B7A78F"] as const,
+      description: "Father: Light Brown ( wool Blend )- Autumn Tie",
     },
   },
   entourage: {
-    image: "/Details/entourage.png",
+    image: "/Details/birdalParty.png",
     imageAspect: "669/373",
     ladies: {
-      colors: ["#F7E89A", "#FFF8EE", "#EAD9B8", "#B8A68C"] as const,
-      description: "Butter Yellow Long Gown",
+      colors: ["#ADB79E", "#07361A", "#767D54"] as const,
+      description: "Sage Green - ( Light crepe ), Forest Green - ( velvet ), Moss Green - ( silk )",
     },
     gentlemen: {
-      colors: ["#C8CDD3", "#7EA2C5", "#5F7F9F", "#4A4F56", "#FFFFFF"] as const,
-      description: "Barong Tagalog and Pants",
+      colors: ["#494947"] as const,
+      description: "Charcoal Gray -( wool blend )",
     },
   },
   guests: {
+    image: "/Details/principalSponsors.png",
+    imageAspect: "677/369",
+    ladies: {
+      colors: ["#FDCD7A"] as const,
+      description: "Marigold silk-satin",
+    },
+    gentlemen: {
+      colors: ["#E7DECA", "#C7B7A1"] as const,
+      description: "Cream Suit / Beige Barong",
+    },
+  },
+  guests2: {
     image: "/Details/guest.png",
     imageAspect: "677/369",
     ladies: {
-      colors: ["#E6D3B3", "#C9B49A", "#7F9A7A", "#556B5D", "#6A4A3C", "#8A6B5A", "#F8F4EE", "#DCCFC3"] as const,
-      description: "Champagne Gold, Chocolate Brown, Beige and Sage Green Long Dress",
+      colors: ["#630B18", "#441218", "#493326"] as const,
+      description: "Burgundy, Maroon, Dark Brown (chocolate silk)",
     },
     gentlemen: {
-      colors: ["#1A1A1A", "#FFFFFF", "#4A4A4A", "#C9CDD2", "#F8F6F2"] as const,
-      description: "Black Suit without Tie",
+      colors: ["#630B18", "#441218", "#493326"] as const,
+      description: "Burgundy, Maroon, Dark Brown (chocolate silk)",
     },
   },
 } as const
@@ -386,10 +398,10 @@ function EventVenueCard({
             <span className={`${cinzel.className} inline-block mb-2 px-3 py-1 rounded-full bg-white/20 backdrop-blur-sm text-[10px] sm:text-xs uppercase tracking-[0.2em] text-white border border-white/30`}>
               {badge}
             </span>
-            <h3 className={`${theSeasons.className} text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-white mb-1 sm:mb-1.5 drop-shadow-lg uppercase tracking-[0.12em] leading-tight`}>
+            <h3 className={`${theSeasons.className} text-base sm:text-lg md:text-xl lg:text-2xl font-semibold text-white mb-1 sm:mb-1.5 drop-shadow-lg uppercase tracking-[0.12em] leading-tight`}>
               {locationName}
             </h3>
-            <p className={`${theSeasons.className} text-xs sm:text-sm md:text-base lg:text-lg text-white/95 drop-shadow-md tracking-[0.06em] leading-snug`}>
+            <p className={`${theSeasons.className} text-[10px] sm:text-xs md:text-sm lg:text-base text-white/95 drop-shadow-md tracking-[0.06em] leading-snug`}>
               {venueAddress}
             </p>
           </div>
@@ -449,15 +461,15 @@ function EventVenueCard({
                 <p className={`${cinzel.className} ${ct.label} font-semibold mb-1.5 sm:mb-2 uppercase tracking-wide`} style={{ color: detailText.label }}>
                   {venueSectionLabel}
                 </p>
-                <p className={`${theSeasons.className} text-base sm:text-lg md:text-xl lg:text-2xl font-semibold leading-snug tracking-[0.06em] uppercase`} style={{ color: detailText.heading }}>
+                <p className={`${theSeasons.className} text-sm sm:text-base md:text-lg lg:text-xl font-semibold leading-snug tracking-[0.06em] uppercase`} style={{ color: detailText.heading }}>
                   {locationName}
                 </p>
                 {venueDetail && (
-                  <p className={`${theSeasons.className} ${ct.bodyMd} leading-relaxed mt-1 tracking-wide`} style={{ color: detailText.label }}>
+                  <p className={`${theSeasons.className} ${ct.body} leading-relaxed mt-1 tracking-wide`} style={{ color: detailText.label }}>
                     {venueDetail}
                   </p>
                 )}
-                <p className={`${theSeasons.className} text-sm sm:text-base md:text-lg leading-relaxed mt-1 tracking-[0.04em]`} style={{ color: detailText.body }}>
+                <p className={`${theSeasons.className} ${ct.body} leading-relaxed mt-1 tracking-[0.04em]`} style={{ color: detailText.body }}>
                   {venueAddress}
                 </p>
               </div>
@@ -542,7 +554,7 @@ export function Details() {
   const siteConfig = useSiteConfig()
   const [copiedItems, setCopiedItems] = useState<Set<string>>(new Set())
   const [currentCeremonyImageIndex, setCurrentCeremonyImageIndex] = useState(0)
-  // const [currentReceptionImageIndex, setCurrentReceptionImageIndex] = useState(0)
+  const [currentReceptionImageIndex, setCurrentReceptionImageIndex] = useState(0)
   const [showImageModal, setShowImageModal] = useState<string | null>(null)
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
   const [rotationOffset, setRotationOffset] = useState(0)
@@ -551,11 +563,11 @@ export function Details() {
     "/gallery-design/box (1).jpg",
     "/gallery-design/box (2).jpg",
     "/gallery-design/box (3).jpg",
-    "/gallery-design/mobile (3).jpg",
+    "/gallery-design/box (5).jpg",
   ]
 
   const ceremonyImages = siteConfig.ceremony.image
-  // const receptionImages = siteConfig.reception.image
+  const receptionImages = siteConfig.reception.image
   const dressCodeColors = siteConfig.dressCode.colors.split(",").map((color) => color.trim())
 
   useEffect(() => {
@@ -565,12 +577,12 @@ export function Details() {
     return () => clearInterval(timer)
   }, [ceremonyImages.length])
 
-  // useEffect(() => {
-  //   const timer = setInterval(() => {
-  //     setCurrentReceptionImageIndex((prev) => (prev + 1) % receptionImages.length)
-  //   }, 3000)
-  //   return () => clearInterval(timer)
-  // }, [receptionImages.length])
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentReceptionImageIndex((prev) => (prev + 1) % receptionImages.length)
+    }, 4500)
+    return () => clearInterval(timer)
+  }, [receptionImages.length])
 
   // Gentle reminders couple photos — subtle carousel + wobble animation
   useEffect(() => {
@@ -639,7 +651,7 @@ export function Details() {
         <div className="pointer-events-none absolute left-0 top-0 z-10">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/decoration/decoration/left-top-decoration.png"
+            src="/decoration/deco/top-left-corner-deco.png"
             alt=""
             className={CORNER_DECO_CLASS}
           />
@@ -647,7 +659,7 @@ export function Details() {
         <div className="pointer-events-none absolute right-0 top-0 z-10">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/decoration/decoration/right-top-decoration.png"
+            src="/decoration/deco/top-right-corner-deco.png"
             alt=""
             className={CORNER_DECO_CLASS}
           />
@@ -655,7 +667,7 @@ export function Details() {
         <div className="pointer-events-none absolute bottom-0 left-0 z-10">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/decoration/decoration/left-bottom-decoration%20(2).png"
+            src="/decoration/deco/bottom-left-corner-deco.png"
             alt=""
             className={CORNER_DECO_CLASS}
           />
@@ -663,7 +675,7 @@ export function Details() {
         <div className="pointer-events-none absolute bottom-0 right-0 z-10">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/decoration/decoration/right-bottom-decoration%20(2).png"
+            src="/decoration/deco/bottom-right-corner-deco.png"
             alt=""
             className={CORNER_DECO_CLASS}
           />
@@ -701,7 +713,7 @@ export function Details() {
       {/* Venue and Event Information */}
       <div className="relative z-20 max-w-5xl mx-auto px-4 sm:px-6 md:px-8 mb-8 sm:mb-10 md:mb-12 space-y-6 sm:space-y-10 md:space-y-14">
         <EventVenueCard
-          badge="Ceremony and Reception"
+          badge="Ceremony"
           images={ceremonyImages}
           activeImageIndex={currentCeremonyImageIndex}
           locationName={ceremonyVenueName}
@@ -710,7 +722,7 @@ export function Details() {
           day={siteConfig.ceremony.day}
           dateString={siteConfig.ceremony.date}
           time={siteConfig.ceremony.time}
-          venueSectionLabel="Ceremony & Reception Venue"
+          venueSectionLabel="Ceremony Venue"
           mapsLink={ceremonyMapsLink}
           copyId="ceremony"
           fullVenue={ceremonyVenue}
@@ -719,7 +731,6 @@ export function Details() {
           onOpenMaps={openInMaps}
         />
 
-        {/* Reception card — hidden for now; ceremony covers both events
         <EventVenueCard
           badge="Reception"
           images={receptionImages}
@@ -739,7 +750,7 @@ export function Details() {
           onCopy={copyToClipboard}
           onOpenMaps={openInMaps}
         />
-        */}
+       
       </div>
 
       {/* Attire Guidelines */}
@@ -771,7 +782,7 @@ export function Details() {
         {/* Attire cards — Sponsors, Entourage & Guests */}
         <div className="mb-6 grid grid-cols-1 items-start gap-6 sm:mb-8 sm:gap-8 md:mb-10 lg:grid-cols-3">
           <AttireCard
-            title="Sponsors"
+            title="The Parents"
             image={attireGuide.sponsors.image}
             imageAspect={attireGuide.sponsors.imageAspect}
             alt="Principal sponsor attire guide"
@@ -791,7 +802,7 @@ export function Details() {
           </AttireCard>
 
           <AttireCard
-            title="Entourage"
+            title="The Bridal Party"
             image={attireGuide.entourage.image}
             imageAspect={attireGuide.entourage.imageAspect}
             alt="Entourage attire guide"
@@ -811,10 +822,10 @@ export function Details() {
           </AttireCard>
 
           <AttireCard
-            title="Guests"
+            title="Principal Sponsors"
             image={attireGuide.guests.image}
             imageAspect={attireGuide.guests.imageAspect}
-            alt="Guest attire guide"
+            alt="Principal Sponsors attire guide"
           >
             <div className="grid grid-cols-1 gap-5 sm:gap-6">
               <AttirePaletteGroup
@@ -826,6 +837,25 @@ export function Details() {
                 label="Gentlemen"
                 colors={attireGuide.guests.gentlemen.colors}
                 description={attireGuide.guests.gentlemen.description}
+              />
+            </div>
+          </AttireCard>
+          <AttireCard
+            title="Principal Sponsors"
+            image={attireGuide.guests2.image}
+            imageAspect={attireGuide.guests2.imageAspect}
+            alt="Principal Sponsors attire guide"
+          >
+            <div className="grid grid-cols-1 gap-5 sm:gap-6">
+              <AttirePaletteGroup
+                label="Ladies"
+                colors={attireGuide.guests2.ladies.colors}
+                description={attireGuide.guests2.ladies.description}
+              />
+              <AttirePaletteGroup
+                label="Gentlemen"
+                colors={attireGuide.guests2.gentlemen.colors}
+                description={attireGuide.guests2.gentlemen.description}
               />
             </div>
           </AttireCard>
@@ -989,7 +1019,7 @@ export function Details() {
                   <>
                     <Heart className="w-4 h-4" fill="var(--color-motif-cream)" style={{ color: "var(--color-motif-cream)" }} />
                     <span className="text-xs sm:text-sm font-bold text-motif-cream">
-                      Ceremony & Reception
+                      Ceremony Venue
                     </span>
                   </>
                 ) : (
@@ -1012,7 +1042,11 @@ export function Details() {
               <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -skew-x-12 animate-shimmer opacity-0 group-hover:opacity-100 transition-opacity duration-1000 z-0" />
 
               <Image
-                src={showImageModal === "ceremony" ? "/Details/ceremony&location.jpg" : "/Details/Kayama Mountain Resort And Events Place, Sitio Kaytuyang, Brgy. Aga Nasugbu, Batangas.png"}
+                src={
+                  showImageModal === "ceremony"
+                    ? ceremonyImages[currentCeremonyImageIndex] ?? ceremonyImages[0]
+                    : receptionImages[currentReceptionImageIndex] ?? receptionImages[0]
+                }
                 alt={showImageModal === "ceremony" ? ceremonyLocationFormatted : receptionLocationFormatted}
                 fill
                 className="object-contain p-6 sm:p-8 md:p-10 transition-transform duration-700 group-hover:scale-105 z-10"
@@ -1055,35 +1089,19 @@ export function Details() {
 
                     {/* Date & Time info */}
                     {showImageModal === "ceremony" && (
-                      <div className="space-y-2">
-                        <div
-                          className="flex items-center gap-2 text-sm font-medium px-3 py-2 rounded-lg border"
-                          style={{
-                            color: "var(--color-motif-cream)",
-                            backgroundColor: "var(--color-motif-deep)",
-                            opacity: 0.9,
-                            borderColor: "var(--color-motif-cream)",
-                          }}
-                        >
-                          <Clock className="w-4 h-4 text-motif-cream shrink-0" />
-                          <span>
-                            Ceremony — {formattedCeremonyDate} at {siteConfig.ceremony.time}
-                          </span>
-                        </div>
-                        <div
-                          className="flex items-center gap-2 text-sm font-medium px-3 py-2 rounded-lg border"
-                          style={{
-                            color: "var(--color-motif-cream)",
-                            backgroundColor: "var(--color-motif-deep)",
-                            opacity: 0.9,
-                            borderColor: "var(--color-motif-cream)",
-                          }}
-                        >
-                          <Utensils className="w-4 h-4 text-motif-cream shrink-0" />
-                          <span>
-                            Reception — {formattedReceptionDate} at {siteConfig.reception.time}
-                          </span>
-                        </div>
+                      <div
+                        className="flex items-center gap-2 text-sm font-medium px-3 py-2 rounded-lg border"
+                        style={{
+                          color: "var(--color-motif-cream)",
+                          backgroundColor: "var(--color-motif-deep)",
+                          opacity: 0.9,
+                          borderColor: "var(--color-motif-cream)",
+                        }}
+                      >
+                        <Clock className="w-4 h-4 text-motif-cream shrink-0" />
+                        <span>
+                          {formattedCeremonyDate} at {siteConfig.ceremony.time}
+                        </span>
                       </div>
                     )}
                     {showImageModal === "reception" && (

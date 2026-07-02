@@ -111,7 +111,7 @@ function LayeredWelcomeTitle() {
         style={{
           marginTop: "var(--script-overlap)",
           fontSize: "var(--script-size)",
-          color: "var(--color-welcome-green)",
+          color: "var(--color-motif-accent)",
           textShadow:
             "0 1px 0 color-mix(in srgb, var(--color-welcome-bg) 95%, white), 0 0 10px color-mix(in srgb, var(--color-welcome-bg) 65%, white)",
         }}
@@ -253,7 +253,7 @@ export function Welcome() {
                 <p
                   className={`${aboveTheBeyond.className} text-[1.3rem] leading-none min-[400px]:text-[1.45rem] sm:text-[1.6rem] md:text-[1.8rem]`}
                   style={{
-                    color: "var(--color-welcome-green)",
+                    color: "var(--color-motif-accent)",
                     textShadow:
                       "0 1px 0 color-mix(in srgb, var(--color-welcome-bg) 90%, white)",
                   }}

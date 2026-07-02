@@ -5,11 +5,11 @@ import {
 
 export const siteConfig = {
   couple: {
-    bride: "Gayle Kathleen Asoy Gable", //Noenyl Bryle M. Gonzaga
-    brideNickname: "Kath", //Ltryl
-    groom: "Jopert Rey Cabote De La Cruz", //Ltryl B. Benitez
-    groomNickname: "Jopert",
-    monogram:"/monogram/mono-colored.png" ,//Ltryl
+    bride: "Alyanna Dyan Gallardo Manzano", //Alyanna Dyan Gallardo Manzano
+    brideNickname: "Alyanna", //Ltryl
+    groom: "Dean Jay Belwa Balcanao", //Ltryl B. Benitez
+    groomNickname: "Dean",
+    monogram:"/monogram/new-monogram.png" ,//Ltryl
     backgroundMusic:"/background_music/Taylor Swift - Labyrinth (Official HD Audio) (mp3cut.net).mp3"
   },
   googleAPI:{
@@ -25,9 +25,9 @@ export const siteConfig = {
     googleShare: "https://docs.google.com/spreadsheets/d/1YyCJqiMRftgt6Z2Qzcz0usQIPvnQdCbwoAXAU3yaDsc/edit?usp=sharing", 
   },
   wedding: {
-    date: "October 18, 2026",
-    time: "3:00 PM",
-    venue: "St. Anthony of Padua Parish",
+    date: "December 7, 2026",
+    time: "1:00 PM",
+    venue: "Chapel of the Mountains, Itogon Mountain Village",
     tagline: "are getting married!",
     theme: "Our wedding palette is inspired by timeless elegance and warmth.Motif Colors: Champagne Gold, Soft Beige, Warm Soft Brown",
     motif: "#BBCED5, #B9C3A8, #F3D8C5, #D1C4D4, #ECD8BA, #F4E8D8, #E1DCCF",
@@ -40,8 +40,8 @@ export const siteConfig = {
   },
   details: {
     rsvp: {
-      deadline: "August 1, 2026",
-      coordinator: "Gayle Kathleen Asoy Gable",
+      deadline: "November 1, 2026",
+      coordinator: "Dean Jay Belwa Balcanao",
       phone: "+63 965 490 6240",
     },
   },
@@ -65,24 +65,24 @@ export const siteConfig = {
     }
   },
   ceremony: {
-    location: "Farm Hills Garden",
-    venue: "Brgy. Ulat, Silang, 4118 Cavite, Philippines",
-    map: "https://maps.app.goo.gl/XsvkMe2e4G47JfEA9",
-    date: "October 18, 2026",
-    day: "Sunday",
-    time: "3:00 PM",
-    entourageTime: "2:00 PM",
-    guestsTime: "2:30 PM",
-    image: ["/Details/reception.png", "/Details/reception2.png", "/Details/reception3.png"],
+    location: "Chapel of the Mountains, Itogon Mountain Village",
+    venue: "Brgy Loacan, Ambuklao Road, Benguet - Nueva Vizcaya Rd, La Trinidad, Benguet",
+    map: "https://maps.app.goo.gl/i5MoJL8H9zTG2Jyq5",
+    date: "December 7, 2026",
+    day: "Monday",
+    time: "1:00 PM",
+    entourageTime: "11:00 AM",
+    guestsTime: "11:30 AM",
+    image: ["/Details/ceremony.png", "/Details/ceremony2.jpg", "/Details/ceremony3.png"],
   },
   reception: {
-    location: "Baybayon Ni Tata Joven",
-    venue: "Brgy. Ngolos, Guiuan, Eastern Samar ",
-    map: "https://maps.app.goo.gl/LBsKoJMUGNVwKSqK8",
-    date: "October 18, 2026",
-    day: "Wednesday",
+    location: "Montesierra Events Place",
+    venue: "733 Ambuklao Rd, Itogon, 2604 Benguet",
+    map: "https://maps.app.goo.gl/NAFDLFFgvHYeNiVY9",
+    date: "December 7, 2026",
+    day: "Monday",
     time: "6:00 PM",
-    image: ["/Details/reception.png", "/Details/reception2.png", "/Details/reception3.png"],
+    image: ["/Details/reception.png", "/Details/reception1.png", "/Details/reception3.png"],
   },
   dressCode: {
       theme: "SEMI-FORMAL",
@@ -144,7 +144,7 @@ Now, as they prepare to say yes before God and the people they love most, Cather
     googleDriveLink:
       "https://drive.google.com/drive/folders/1GPp6UBBGJ4eY4G9jE9Esfo2209PuEgWk?usp=sharing",
     albumQR: "/QR/AlbumQR.png",
-    hashtag: ["#JOPERTfoundhisKATHadhana",  ],
+    hashtag: ["#DeanAndAlyannaTieTheKnot"],
     instructions: "Please scan this QR Code and upload the photos and videos you have taken during our wedding reception. We are delighted to see your snaps too!",
   },
   accommodation: {
