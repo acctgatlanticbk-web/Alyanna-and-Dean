@@ -841,10 +841,10 @@ export function Details() {
             </div>
           </AttireCard>
           <AttireCard
-            title="Principal Sponsors"
+            title="Guests"
             image={attireGuide.guests2.image}
             imageAspect={attireGuide.guests2.imageAspect}
-            alt="Principal Sponsors attire guide"
+            alt="Guests attire guide"
           >
             <div className="grid grid-cols-1 gap-5 sm:gap-6">
               <AttirePaletteGroup
