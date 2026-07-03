@@ -158,7 +158,7 @@ export function Footer() {
 
   const groomName = siteConfig.couple.groomNickname || siteConfig.couple.groom
   const brideName = siteConfig.couple.brideNickname || siteConfig.couple.bride
-  const coupleDisplayName = `${groomName} & ${brideName}`
+  const coupleDisplayName = `${brideName} & ${groomName}`
 
   const [currentQuoteIndex, setCurrentQuoteIndex] = useState(0)
   const [displayedText, setDisplayedText] = useState("")
@@ -277,7 +277,7 @@ export function Footer() {
           </motion.div>
 
           <div className="mt-4 max-w-md text-center sm:mt-5 md:mt-6">
-            <FooterCoupleNames groom={groomName} bride={brideName} />
+            <FooterCoupleNames groom={brideName} bride={groomName} />
             <p
               className="font-goudy-italic mt-2 text-[0.75rem] leading-[1.62] sm:mt-3 sm:text-[0.8125rem] md:text-[0.84375rem]"
               style={{ color: "var(--color-welcome-text)" }}

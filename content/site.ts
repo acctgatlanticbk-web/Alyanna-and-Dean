@@ -18,7 +18,7 @@ export const siteConfig = {
     guestList: "https://script.google.com/macros/s/AKfycbx43JBhDpAHeWt3Z5U75E0ZTHbBfD_-p14llASXDCohtmrUvNMwNtJBapO3uUXxGPkg/exec",  //done
     guestRequest: "https://script.google.com/macros/s/AKfycbxW0drh2MhTB3PVesj6g96SHGlGGyZlFVF8Vip7j9xxzFjNhiCTLQY0P2wnt4btGEpn/exec",   //done
     entourage: "https://script.google.com/macros/s/AKfycbwF8KDuS75fYdsDVWF-hlu89bM-lpJ4eOXE5EaZM2ItS4Sh-rNGSCf7GZUBQ7hCvOq_/exec",  //done
-    sponsors: "https://script.google.com/macros/s/AKfycbyNQZZIl4Du1vMt3FG96Xd87u6YflzNKUU-P4vpB4hh_xmH4V6mGwTqd-Hvs-pij84W/exec",  //done 
+    sponsors: "https://script.google.com/macros/s/AKfycbwsTQ2ZJVXW2R_Zrv7uifVcyKVtONMj9-rFM1Jsfse959CIsLt-5t1faGwTZFjqdnlM/exec",  //done 
     proposalResponses: "https://script.google.com/macros/s/AKfycbz3A3jOxkirdVVqA-WVneK0yDtz_Pb0emMeuHZlIWKJ_QIz-miPSZ-hpXKiyxd7fm8/exec", // uses entourage script with action: proposal
     weddingDetails: "https://script.google.com/macros/s/AKfycbxxRTzQFgdn0nsa8Cu1mn9QegioFFv9uSvBstRSZu6m8vOSEU2QnbSs7f-nVIsQSbrT/exec",   //done
 ////google share 
