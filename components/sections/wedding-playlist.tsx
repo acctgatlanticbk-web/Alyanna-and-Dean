@@ -45,8 +45,10 @@ let cachedSpotifyIframeApi: SpotifyIframeApi | null = null
 const spotifyApiReadyQueue: Array<(api: SpotifyIframeApi) => void> = []
 
 function getSpotifyUri(spotifyUrl: string): string {
+  if (spotifyUrl.startsWith("spotify:")) return spotifyUrl
+
   const match = spotifyUrl.match(
-    /open\.spotify\.com\/(playlist|album|track|episode)\/([^/?]+)/
+    /open\.spotify\.com\/(?:embed\/)?(playlist|album|track|episode)\/([^/?]+)/
   )
   if (!match) return spotifyUrl
   return `spotify:${match[1]}:${match[2]}`

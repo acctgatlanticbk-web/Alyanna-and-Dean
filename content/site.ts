@@ -13,16 +13,16 @@ export const siteConfig = {
     backgroundMusic:"/background_music/Taylor Swift - Labyrinth (Official HD Audio) (mp3cut.net).mp3"
   },
   googleAPI:{
-    messageForm: "https://docs.google.com/forms/d/e/1FAIpQLSeZyqdEWHbpTcUO_ZxuZ9NyhJRgWxVAm2ex97M24LAS7lNmRQ/formResponse",   //done
-    message: "https://script.google.com/macros/s/AKfycbyNq1rbdZ-rn_MUp7K0f7DK90V0vbQ2H0I-cuBjJOOWJn0dTD3AvXsJaRQtzLqic2j9Wg/exec",  //done
-    guestList: "https://script.google.com/macros/s/AKfycbzTCWBhcqT5dwT11LdsnCIumD5RbDacZjuP86VCrDr7o8If-31cWhczoi3wAhczrMt5RA/exec",  //done
-    guestRequest: "https://script.google.com/macros/s/AKfycbw3nG0aqPVQQkloycJlC1klLMoHHHMdk3N2Bw3rL0j6sDFlVf_opxuSMgrjoXnv7SJr9Q/exec",   //done
-    entourage: "https://script.google.com/macros/s/AKfycbw9Xvit2LuVPMVfbvPAwZzy_g2yyB3axRLKt7DYINeriwSsmAw-ZcBfMSGeOpvc2pFp6A/exec",  //done
-    sponsors: "https://script.google.com/macros/s/AKfycbxOesICKCBZtXoejxd06pLAeBIst3o4wlKOI9HJ5QVRVNeS2fppDXV1o99-YMndSHB0JQ/exec",  //done 
-    proposalResponses: "https://script.google.com/macros/s/AKfycbyLYCJjoP7-QHfpA35rl5W2b-AySiPtw2bU64heq-VHA4OCNjUD319z9X70qoomMJKuKQ/exec", // uses entourage script with action: proposal
-    weddingDetails: "https://script.google.com/macros/s/AKfycbzlF9oLKi-CrcY66Z6i55wrW9-NF0UJUDZutw_KGEkuZJIf7do-1TLOYCijjYA18N6QSg/exec",   //done
+    messageForm: "https://docs.google.com/forms/d/e/1FAIpQLSeA2Vr4PgwxPNpS7HNbyivgnrRYRw33NV8RU313Ch88ERy4mg/formResponse",   //done
+    message: "https://script.google.com/macros/s/AKfycbwnn9NPmZDxBcwKBpWI41MORUco217BHHdT-SsCZ_v4V6DKh-s1r4k45iCkDkzDtCc5/exec",  //done
+    guestList: "https://script.google.com/macros/s/AKfycbx43JBhDpAHeWt3Z5U75E0ZTHbBfD_-p14llASXDCohtmrUvNMwNtJBapO3uUXxGPkg/exec",  //done
+    guestRequest: "https://script.google.com/macros/s/AKfycbxW0drh2MhTB3PVesj6g96SHGlGGyZlFVF8Vip7j9xxzFjNhiCTLQY0P2wnt4btGEpn/exec",   //done
+    entourage: "https://script.google.com/macros/s/AKfycbwF8KDuS75fYdsDVWF-hlu89bM-lpJ4eOXE5EaZM2ItS4Sh-rNGSCf7GZUBQ7hCvOq_/exec",  //done
+    sponsors: "https://script.google.com/macros/s/AKfycbyNQZZIl4Du1vMt3FG96Xd87u6YflzNKUU-P4vpB4hh_xmH4V6mGwTqd-Hvs-pij84W/exec",  //done 
+    proposalResponses: "https://script.google.com/macros/s/AKfycbz3A3jOxkirdVVqA-WVneK0yDtz_Pb0emMeuHZlIWKJ_QIz-miPSZ-hpXKiyxd7fm8/exec", // uses entourage script with action: proposal
+    weddingDetails: "https://script.google.com/macros/s/AKfycbxxRTzQFgdn0nsa8Cu1mn9QegioFFv9uSvBstRSZu6m8vOSEU2QnbSs7f-nVIsQSbrT/exec",   //done
 ////google share 
-    googleShare: "https://docs.google.com/spreadsheets/d/1YyCJqiMRftgt6Z2Qzcz0usQIPvnQdCbwoAXAU3yaDsc/edit?usp=sharing", 
+    googleShare: "https://docs.google.com/spreadsheets/d/1G304je_b5PvxzIVO7YsOEuiiJ_JvGDWgHbkuAzgQNkA/edit?usp=sharing", 
   },
   wedding: {
     date: "December 7, 2026",
@@ -135,14 +135,12 @@ Now, as they prepare to say yes before God and the people they love most, Cather
     title: "A Playlist from our hearts",
     subtitle: "Songs that have been part of our journey together",
     playlistName: "Dean and Alyanna Wedding",
-    embedUrl:
-    //"https://open.spotify.com/embed/playlist/4fr1yyG0dA8rAnhYTQxECe?utm_source=generator&si=32898d38071f43ba
-      "https://open.spotify.com/embed/playlist/2wZOUW7A6YLDKOREccGGiP",
-    spotifyUrl: "https://open.spotify.com/embed/playlist/2wZOUW7A6YLDKOREccGGiP",
+    // Use the normal Spotify share link (Share → Copy link), not the embed URL.
+    spotifyUrl: "https://open.spotify.com/playlist/2wZOUW7A6YLDKOREccGGiP",
   },
   snapShare: {
     googleDriveLink:
-      "https://drive.google.com/drive/folders/1GPp6UBBGJ4eY4G9jE9Esfo2209PuEgWk?usp=sharing",
+      "https://drive.google.com/drive/folders/1pRdDqtIDwRLisfyeQblnGGyEVac1jUwA?usp=sharing",
     albumQR: "/QR/AlbumQR.png",
     hashtag: ["#DeanAndAlyannaTieTheKnot"],
     instructions: "Please scan this QR Code and upload the photos and videos you have taken during our wedding reception. We are delighted to see your snaps too!",
