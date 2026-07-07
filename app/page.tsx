@@ -36,9 +36,14 @@ export default function Home() {
   // here so a page refresh always replays the loading screen.
   const [appState, setAppState] = useState<AppState>(() => {
     if (typeof window !== "undefined") {
-      const returning = sessionStorage.getItem("returnFromGallery")
-      if (returning === "true") {
+      const returningFromGallery = sessionStorage.getItem("returnFromGallery")
+      const returningFromLoveStory = sessionStorage.getItem("returnFromLoveStory")
+      if (returningFromGallery === "true") {
         sessionStorage.removeItem("returnFromGallery")
+        return AppState.DETAILS
+      }
+      if (returningFromLoveStory === "true") {
+        sessionStorage.removeItem("returnFromLoveStory")
         return AppState.DETAILS
       }
     }
@@ -91,7 +96,7 @@ export default function Home() {
               <MainHero visible={appState === AppState.DETAILS} />
               <Welcome />
                {/* <CoupleVideo />  */}
-              <LoveStory />
+              <LoveStory />  
               <Countdown />
               <Gallery />
               {/* <VideoMessage /> */}
@@ -103,14 +108,11 @@ export default function Home() {
               {/* <Entourage /> */}
               <GuestList />
               <BookOfGuests />
-      
               {/* <PrincipalSponsors /> */}
               <WeddingPlaylist />
               <FAQ />
-              
               <Registry />
               <SnapShare />
-
               <Footer />
             </div>
           </div>
