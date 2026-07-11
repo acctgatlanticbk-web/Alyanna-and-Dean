@@ -97,22 +97,22 @@ export default function Home() {
               <Welcome />
                {/* <CoupleVideo />  */}
               <LoveStory />  
-              <Countdown />
               <Gallery />
+              <Countdown />    
               {/* <VideoMessage /> */}
-              <Messages />
               <Details />
               {/* <Accommodation /> */}
               {/* <GuestInformation /> */}
               <WeddingTimeline />
               {/* <Entourage /> */}
               <GuestList />
-              <BookOfGuests />
+              {/* <BookOfGuests /> */}
               {/* <PrincipalSponsors /> */}
               <WeddingPlaylist />
               <FAQ />
               <Registry />
               <SnapShare />
+              <Messages />
               <Footer />
             </div>
           </div>
