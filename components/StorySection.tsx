@@ -25,6 +25,8 @@ interface StorySectionProps {
   isFirst?: boolean
   isLast?: boolean
   variant?: "scroll" | "slide"
+  slideIndex?: number
+  totalSlides?: number
 }
 
 export const StorySection: React.FC<StorySectionProps> = ({
@@ -36,6 +38,8 @@ export const StorySection: React.FC<StorySectionProps> = ({
   isFirst = false,
   isLast = false,
   variant = "scroll",
+  slideIndex,
+  totalSlides,
 }) => {
   const isDark = theme === "dark"
   const isSlide = variant === "slide"
@@ -91,7 +95,7 @@ export const StorySection: React.FC<StorySectionProps> = ({
           "0 8px 24px color-mix(in srgb, var(--color-motif-deep) 7%, transparent), inset 0 1px 0 color-mix(in srgb, white 70%, transparent)",
       }
 
-  const rotation = layout === "image-left" ? "rotate-1 md:rotate-2" : "-rotate-1 md:-rotate-2"
+  const rotation = layout === "image-left" ? "md:rotate-2" : "md:-rotate-2"
   const flexDirection = layout === "image-left" ? "flex-row" : "flex-row-reverse"
   const imageAlt = title ? `Photo: ${title}` : "Story moment photo"
   const expandedRotation = layout === "image-left" ? 2 : -2
@@ -102,7 +106,7 @@ export const StorySection: React.FC<StorySectionProps> = ({
 
   return (
     <div
-      className={`${theSeasons.variable} relative ${isSlide ? "min-h-[min(78vh,720px)]" : ""}`}
+      className={`${theSeasons.variable} relative ${isSlide ? "h-full" : ""}`}
       style={{ background: isDark ? darkBg : lightBg }}
     >
       {!isDark && !isSlide && (
@@ -119,14 +123,16 @@ export const StorySection: React.FC<StorySectionProps> = ({
       )}
       <div
         ref={sectionRef}
-        className={`container relative z-10 mx-auto px-2 transition-all ease-out md:px-12 ${
-          isSlide ? "flex h-full min-h-[inherit] items-center py-10 duration-500 md:py-14" : "py-12 duration-1000 md:py-32"
+        className={`container relative z-10 mx-auto transition-all ease-out ${
+          isSlide
+            ? "flex h-full items-center px-3 py-3 duration-500 sm:px-5 sm:py-5 md:px-12 md:py-10"
+            : "px-2 py-12 duration-1000 md:px-12 md:py-32"
         } ${isVisible ? "translate-y-0 opacity-100" : "translate-y-16 opacity-0"} ${
           !isSlide && isFirst ? "pt-16 md:pt-36" : ""
         } ${!isSlide && isLast ? "pb-16 md:pb-36" : ""}`}
       >
-        <div className={`flex ${flexDirection} items-center justify-between gap-3 md:gap-16`}>
-          <div className="flex w-[45%] shrink-0 justify-center md:w-5/12">
+        <div className={`flex ${flexDirection} items-center justify-between ${isSlide ? "gap-2.5 sm:gap-4 md:gap-16" : "gap-3 md:gap-16"}`}>
+          <div className={`flex shrink-0 justify-center ${isSlide ? "w-[42%] sm:w-[44%] md:w-5/12" : "w-[45%] md:w-5/12"}`}>
             <button
               type="button"
               onClick={() => setIsExpanded(true)}
@@ -145,7 +151,7 @@ export const StorySection: React.FC<StorySectionProps> = ({
               }}
             >
               <div
-                className="w-full p-1.5 transition-shadow duration-500 group-hover:shadow-none md:p-3"
+                className="w-full p-1 transition-shadow duration-500 group-hover:shadow-none sm:p-1.5 md:p-3"
                 style={imageFrameStyle}
               >
                 <div className="relative aspect-[3/4] w-full overflow-hidden">
@@ -153,7 +159,7 @@ export const StorySection: React.FC<StorySectionProps> = ({
                     src={imageSrc}
                     alt={imageAlt}
                     fill
-                    sizes="(max-width: 768px) 45vw, (max-width: 1024px) 40vw, 33vw"
+                    sizes="(max-width: 768px) 44vw, (max-width: 1024px) 40vw, 33vw"
                     className="object-cover transition-transform duration-700 group-hover:scale-[1.06]"
                     quality={90}
                     priority={false}
@@ -161,19 +167,38 @@ export const StorySection: React.FC<StorySectionProps> = ({
                   {isDark && (
                     <div className="pointer-events-none absolute inset-0 z-10 bg-black/5 mix-blend-multiply" />
                   )}
+                  {/* Chapter badge — mobile slide only */}
+                  {isSlide && slideIndex !== undefined && (
+                    <div
+                      className="absolute bottom-0 left-0 z-20 px-1.5 py-0.5 sm:hidden"
+                      style={{
+                        background: "color-mix(in srgb, var(--color-welcome-navy) 78%, transparent)",
+                        backdropFilter: "blur(6px)",
+                      }}
+                    >
+                      <span
+                        className={`${theSeasons.className} block text-[0.45rem] uppercase tracking-[0.18em]`}
+                        style={{ color: "color-mix(in srgb, var(--color-welcome-bg) 85%, transparent)" }}
+                      >
+                        {totalSlides
+                          ? `${String(slideIndex + 1).padStart(2, "0")} of ${String(totalSlides).padStart(2, "0")}`
+                          : `Ch. ${String(slideIndex + 1).padStart(2, "0")}`}
+                      </span>
+                    </div>
+                  )}
                 </div>
               </div>
             </button>
           </div>
 
           <div
-            className="w-[55%] md:w-5/12"
+            className={`${isSlide ? "w-[55%] sm:w-[53%] md:w-5/12" : "w-[55%] md:w-5/12"}`}
             style={{ color: isDark ? lightBg : "var(--color-welcome-text)" }}
           >
             {title &&
               (isSlide ? (
                 <h2
-                  className={`${theSeasons.className} mb-3 text-lg uppercase leading-tight tracking-[0.08em] sm:text-2xl md:mb-6 md:text-3xl md:tracking-[0.12em] lg:text-4xl`}
+                  className={`${theSeasons.className} mb-1.5 text-[0.8rem] uppercase leading-tight tracking-[0.06em] sm:mb-2.5 sm:text-lg sm:tracking-[0.08em] md:mb-6 md:text-3xl md:tracking-[0.12em] lg:text-4xl`}
                   style={{ color: isDark ? lightBg : "var(--color-welcome-navy)" }}
                 >
                   {title}
@@ -192,7 +217,7 @@ export const StorySection: React.FC<StorySectionProps> = ({
               ))}
 
             {isSlide ? (
-              <div className="font-goudy-italic space-y-3 text-[0.75rem] leading-[1.62] sm:space-y-4 sm:text-[0.8125rem] sm:leading-[1.65] md:space-y-6 md:text-[0.84375rem]">
+              <div className="font-goudy-italic space-y-1.5 text-[0.68rem] leading-[1.6] sm:space-y-3 sm:text-[0.8rem] sm:leading-[1.65] md:space-y-6 md:text-[0.84375rem]">
                 {text}
               </div>
             ) : (

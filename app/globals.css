@@ -660,3 +660,33 @@ html {
     display: none;
   }
 }
+
+/* Swipe hint animations */
+@keyframes swipe-hint {
+  0%, 100% { transform: translateX(0); opacity: 0.6; }
+  30%       { transform: translateX(7px); opacity: 0.9; }
+  55%       { transform: translateX(-4px); opacity: 0.5; }
+  75%       { transform: translateX(3px); opacity: 0.7; }
+}
+
+@keyframes swipe-hint-rev {
+  0%, 100% { transform: translateX(0); opacity: 0.6; }
+  30%       { transform: translateX(-7px); opacity: 0.9; }
+  55%       { transform: translateX(4px); opacity: 0.5; }
+  75%       { transform: translateX(-3px); opacity: 0.7; }
+}
+
+.animate-swipe-hint {
+  animation: swipe-hint 2.6s ease-in-out infinite;
+}
+
+.animate-swipe-hint-rev {
+  animation: swipe-hint-rev 2.6s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-swipe-hint,
+  .animate-swipe-hint-rev {
+    animation: none;
+  }
+}
