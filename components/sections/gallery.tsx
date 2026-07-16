@@ -245,13 +245,13 @@ export function Gallery() {
         <div className="my-4 sm:my-5 md:my-6">
           <GalleryTitle />
         </div>
-        <p
+        {/* <p
           className="font-goudy-italic mx-auto max-w-2xl px-2 text-[0.75rem] leading-[1.62] sm:text-[0.8125rem] sm:leading-[1.65] md:text-[0.84375rem]"
           style={{ color: "var(--color-welcome-text)" }}
         >
           From our first chapter to this beautiful season of commitment — every moment has been a
           testament to love, faith, and grace.
-        </p>
+        </p> */}
 
         <div className="flex items-center justify-center gap-2 pt-3 sm:pt-4">
           <span
