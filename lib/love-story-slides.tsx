@@ -17,12 +17,14 @@ export const LOVE_STORY_SLIDES: LoveStorySlide[] = [
     text: (
       <>
         <p className="mb-4">
-          Every great love story starts with a single moment that changes everything.
+        Every great love story starts with a single moment that changes everything.
+
+        <br />
+For Alyanna & Dean, it all started with a simple hello in law school back in 2017.
+What began as two classmates crossing paths soon became countless conversations, shared laughter, and a connection neither of them expected.
+That quiet spark slowly grew into something extraordinary-the beginning of a love story that would last a lifetime.
         </p>
-        <p className="mb-4">
-          For Alyanna and Dean, it began with a simple hello, a quiet spark neither of them expected
-          would grow into forever.
-        </p>
+     
       </>
     ),
   },
@@ -90,21 +92,21 @@ export const LOVE_STORY_SLIDES: LoveStorySlide[] = [
       </>
     ),
   },
-  {
-    theme: "light",
-    layout: "image-right",
-    title: "Celebrating Every Beautiful Milestone",
-    imageSrc: "/LoveStory/2021 Jan.webp",
-    text: (
-      <>
-        <p>Life feels a little brighter when its biggest moments are shared with the right person.</p>
-        <p className="mb-4">
-          Alyanna and Dean made it a habit to celebrate every win together, no achievement ever felt
-          small when the other was cheering nearby.
-        </p>
-      </>
-    ),
-  },
+  // {
+  //   theme: "light",
+  //   layout: "image-right",
+  //   title: "Celebrating Every Beautiful Milestone",
+  //   imageSrc: "/LoveStory/2021 Jan.webp",
+  //   text: (
+  //     <>
+  //       <p>Life feels a little brighter when its biggest moments are shared with the right person.</p>
+  //       <p className="mb-4">
+  //         Alyanna and Dean made it a habit to celebrate every win together, no achievement ever felt
+  //         small when the other was cheering nearby.
+  //       </p>
+  //     </>
+  //   ),
+  // },
   {
     theme: "light",
     layout: "image-left",
@@ -123,14 +125,13 @@ export const LOVE_STORY_SLIDES: LoveStorySlide[] = [
   {
     theme: "light",
     layout: "image-right",
-    title: "Another Chapter, Another Dream Realized",
+    title: "Another milestone achieved.",
     imageSrc: "/LoveStory/Alyanna roll signing 2022.webp",
     text: (
       <>
-        <p>A new page turned, and a dream became real.</p>
         <p className="mb-4">
-          With Dean by her side, Alyanna took another confident step toward the future they had long
-          imagined together.
+        A dream became reality as Dean officially joined the legal profession.
+        Together, they celebrated another milestone in the life they were building side by side.
         </p>
       </>
     ),
@@ -186,14 +187,13 @@ export const LOVE_STORY_SLIDES: LoveStorySlide[] = [
   {
     theme: "light",
     layout: "image-right",
-    title: "Proud of Every Step, Dean",
+    title: "Celebrating a Dream Fulfilled",
     imageSrc: "/LoveStory/Dean graduation 2024.JPG",
     text: (
       <>
-        <p>Hard work and quiet dedication finally paid off.</p>
-        <p className="mb-4">
-          Alyanna stood proudly beside Dean on this well earned day, one more memory added to the
-          story they were building together.
+        <p>Alyanna stood proudly beside Dean,
+          celebrating the dedication, perseverance,
+           and heart that made this achievement possible.
         </p>
       </>
     ),

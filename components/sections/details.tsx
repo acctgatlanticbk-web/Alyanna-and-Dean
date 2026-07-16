@@ -186,7 +186,7 @@ const attireGuide = {
     },
   },
   guests2: {
-    image: "/Details/guest.png",
+    image: "/Details/Gemini_Generated_Image_brldq2brldq2brld-removebg-preview.png",
     imageAspect: "677/369",
     ladies: {
       colors: ["#630B18", "#441218", "#493326"] as const,

@@ -18,13 +18,14 @@ const cormorant = Cormorant_Garamond({
 
 const navLinks = [
   { href: "#home", label: "Home" },
+  { href: "#love-story", label: "Love Story" },
   { href: "#countdown", label: "Countdown" },
   { href: "#gallery", label: "Gallery" },
   { href: "#messages", label: "Messages" },
   { href: "#details", label: "Details" },
-  { href: "#accommodation", label: "Stay" },
-  { href: "#entourage", label: "Entourage" },
-  { href: "#sponsors", label: "Sponsors" },
+  // { href: "#accommodation", label: "Stay" },
+  // { href: "#entourage", label: "Entourage" },
+  // { href: "#sponsors", label: "Sponsors" },
   { href: "#guest-list", label: "RSVP" },
   { href: "#registry", label: "Registry" },
   { href: "#faq", label: "FAQ" },
