@@ -125,12 +125,14 @@ That quiet spark slowly grew into something extraordinary-the beginning of a lov
   {
     theme: "light",
     layout: "image-right",
-    title: "Another Milestone Achieved",
+    title: "Another Chapter, Another Dream Realized",
     imageSrc: "/LoveStory/Alyanna roll signing 2022.webp",
     text: (
       <>
+        <p>A new page turned, and a dream became real.</p>
         <p className="mb-4">
-        A dream became reality as Dean officially joined the legal profession. Together, they celebrated another milestone in the life they were building side by side.
+          With Alyanna by his side, Dean took another confident step toward the future they had long
+          imagined together.
         </p>
       </>
     ),
@@ -230,14 +232,12 @@ That quiet spark slowly grew into something extraordinary-the beginning of a lov
   {
     theme: "light",
     layout: "image-left",
-    title: "Another Chapter, Another Dream Realized",
+    title: "Another Milestone Achieved",
     imageSrc: "/LoveStory/Dean roll signing 2025.webp",
     text: (
       <>
-        <p>A new page turned, and a dream became real.</p>
         <p className="mb-4">
-          With Alyanna by his side, Dean took another confident step toward the future they had long
-          imagined together.
+        A dream became reality as Dean officially joined the legal profession. Together, they celebrated another milestone in the life they were building side by side.
         </p>
       </>
     ),
