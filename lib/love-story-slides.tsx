@@ -131,8 +131,8 @@ That quiet spark slowly grew into something extraordinary-the beginning of a lov
       <>
         <p>A new page turned, and a dream became real.</p>
         <p className="mb-4">
-          With Alyanna by his side, Dean took another confident step toward the future they had long
-          imagined together.
+        With Dean by his side, Alyanna took another confident step 
+        toward the future they had long imagined together. 
         </p>
       </>
     ),
