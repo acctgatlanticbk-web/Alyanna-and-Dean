@@ -125,13 +125,12 @@ That quiet spark slowly grew into something extraordinary-the beginning of a lov
   {
     theme: "light",
     layout: "image-right",
-    title: "Another milestone achieved.",
+    title: "Another Milestone Achieved",
     imageSrc: "/LoveStory/Alyanna roll signing 2022.webp",
     text: (
       <>
         <p className="mb-4">
-        A dream became reality as Dean officially joined the legal profession.
-        Together, they celebrated another milestone in the life they were building side by side.
+        A dream became reality as Dean officially joined the legal profession. Together, they celebrated another milestone in the life they were building side by side.
         </p>
       </>
     ),
