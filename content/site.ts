@@ -84,7 +84,7 @@ export const siteConfig = {
   reception: {
     location: "Montesierra Events Place",
     venue: "733 Ambuklao Rd, Itogon, 2604 Benguet",
-    map: "https://maps.app.goo.gl/NAFDLFFgvHYeNiVY9",
+    map: "https://maps.app.goo.gl/i5MoJL8H9zTG2Jyq5",
     date: "December 7, 2026",
     day: "Monday",
     time: "6:00 PM",
